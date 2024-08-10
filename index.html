@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Guide</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- General sans Font -->
+    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@200,201,300,301,400,401,500,501,600,601,700,701&display=swap" rel="stylesheet">
+    <!-- font -->
+    <script src="https://kit.fontawesome.com/a0d876a191.js" crossorigin="anonymous"></script>
+  
+
+</head>
+<body>
+    <header class="mx-[120px] mt-8 ">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16" />
+                  </svg>
+                </div>
+              </div>
+              <a class="btn btn-ghost  font-semibold text-lg"><img src="Home_imges/radar.png" alt="" class="w-6">Trav.id</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li class="text-[#333333] text-base font-medium font-sans"><a>Discover</a></li>
+                <li class="text-[#333333] text-base font-medium font-sans"><a>Destinations</a></li>
+                <li class="text-[#333333] text-base font-medium font-sans"><a>Contact</a></li>
+                <li class="text-[#333333] text-base font-medium font-sans"><a>FAQ</a></li>
+
+              </ul>
+            </div>
+            <div class="navbar-end gap-5">
+              <a class="btn btn-ghost  font-semibold text-base"><img src="Home_imges/global.png" alt="" class="w-6 text-[#333333]">English</a>
+              <a class="btn btn-ghost font-semibold text-base relative">
+                <i class="fa-solid fa-bell text-2xl"></i>
+                <span class="absolute top-0 w-5 h-5 right-2 inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-red-100 bg-[#58C27D] rounded-full">5</span>
+            </a>
+            
+              <div class="bg-[#58C27D] w-10 h-10 rounded-full flex flex-col justify-center items-center">
+                <a class="btn btn-ghost"><i class="fa-regular fa-user text-white"></i></a>
+              </div>
+             
+            </div>
+          </div>
+          <!-- banner part  -->
+        <section class=" mt-[108px] flex ">
+          <!-- Banner left part -->
+         <section class="">
+          <div class="flex  items-center ">
+            <hr class="w-8 h-[2px] bg-[#58C17D]"> 
+            <h1 class="text-[#58C17D] font-sans font-medium">It's time to go</h1>
+            <img src="Home_imges/rocket.png" alt="" class="w-5 h-6">
+          </div>
+          <!-- main header -->
+          <div>
+          <h1 class="text-6xl font-sans font-semibold mt-4">Don't just dream <br> about it, plan it. <br>Travel</h1>
+          <p class="font-sans font-normal text-[#7D7C84] w-[600px] h-12 mt-4">When you're traveling, do you want to make sure your hotel has a nice pool? Or maybe a happy hour with good deals on drinks? There</p>
+          </div>
+
+          <!-- stays flight experiences -->
+          <section class="w-[986px] h-[156px]  mt-12 p-4 bg-[#FCFCFD] bg-transparent shadow-2xl rounded-b-3xl ">
+            <div class="flex">
+              <input type="radio" id="stays" name="selection" class="hidden peer/stays">
+              <label for="stays" class="w-[69px] h-[52px] p-4 text-sm font-medium text-[#A2A1A7] peer-checked/stays:text-[#09080D] peer-checked/stays:after:content-[''] peer-checked/stays:after:block peer-checked/stays:after:w-full peer-checked/stays:after:h-[2px] peer-checked/stays:after:bg-[#09080D] peer-checked/stays:after:mt-2 cursor-pointer">
+                Stays
+              </label>
+            
+              <input type="radio" id="flight" name="selection" class="hidden peer/flight">
+              <label for="flight" class="w-[69px] h-[52px] p-4 text-sm font-medium text-[#A2A1A7] peer-checked/flight:text-[#09080D] peer-checked/flight:after:content-[''] peer-checked/flight:after:block peer-checked/flight:after:w-full peer-checked/flight:after:h-[2px] peer-checked/flight:after:bg-[#09080D] peer-checked/flight:after:mt-2 cursor-pointer">
+                Flight
+              </label>
+            
+              <input type="radio" id="experiences" name="selection" class="hidden peer/experiences">
+              <label for="experiences" class="w-[113px] h-[52px] p-4 text-sm font-medium text-[#A2A1A7] peer-checked/experiences:text-[#09080D] peer-checked/experiences:after:content-[''] peer-checked/experiences:after:block peer-checked/experiences:after:w-full peer-checked/experiences:after:h-[2px] peer-checked/experiences:after:bg-[#09080D] peer-checked/experiences:after:mt-2 cursor-pointer">
+                Experiences
+              </label>
+            </div>
+            
+          <!-- under the flight expression -->
+          <div class="flex gap-x-8 ">
+            <!-- location -->
+            <div class="flex items-center w-[252px] h-[48px]  ">
+              <img src="Home_imges/loaction.png" alt="" class="w-6 h-6">
+              <div class="ml-2 ">
+                <p class="w-[64px] h-[24px] font-sans font-medium ">Location</p>
+                <p class="text-[#7D7C84] w-[220px] h-[20px]">Search destinations</p>
+              </div>
+            </div>
+            <!-- location end -->
+            <!-- calender start -->
+            <div class="flex items-center  w-[148px] h-[48px]  ">
+              <img src="Home_imges/calendar-add.png" alt="" class="w-6 h-6">
+              <div class="ml-2 ">
+                <p class="w-[64px] h-[24px] font-sans font-medium ">Check in</p>
+                <p class="text-[#7D7C84] w-[116px] h-[20px]">Add dates</p>
+              </div>
+            </div>
+            <!-- calender end -->
+            <!-- checkout -->
+            <div class="flex items-center w-[148px] h-[48px]   ">
+              <img src="Home_imges/calendar-remove.png" alt="" class="w-6 h-6">
+              <div class="ml-2 ">
+                <p class="w-[78px] h-[24px] font-sans font-medium  ">Check out</p>
+                <p class="text-[#7D7C84] w-[116px] h-[20px]">Add dates</p>
+              </div>
+            </div>
+            <!-- checkout end -->
+            <!-- who -->
+            <div class="flex items-center w-[148px] h-[48px]  ">
+              <img src="Home_imges/profile-2user.png" alt="" class="w-6 h-6">
+              <div class="ml-2 ">
+                <p class="w-[64px] h-[24px] font-sans font-medium ">Who</p>
+                <p class="text-[#7D7C84] w-[116px] h-[20px]">Add Guests</p>
+              </div>
+            </div>
+            <!-- who end -->
+            <!-- Search button -->
+            <button class="btn w-[143px] h-[56px] rounded-full bg-[#3B71FE] text-white"><img src="Home_imges/search-normal.png" alt="" class="w-5">Search</button> 
+
+
+          </div>
+          </section>
+          <div class="flex w-[400px] h-[36px] mt-[48px]">
+            <img src="Home_imges/Image1.png" alt="" class="w-[36px] h-[36px] rounded-full">
+            <img src="Home_imges/Image2.png" alt="" class="w-[36px] h-[36px] rounded-full -ml-5">
+            <img src="Home_imges/Image3.png" alt="" class="w-[36px] h-[36px] rounded-full -ml-5">
+            <img src="Home_imges/Image4.png" alt="" class="w-[36px] h-[36px] rounded-full -ml-5">
+            <img src="Home_imges/Image5.png" alt="" class="w-[36px] h-[36px] rounded-full -ml-5">
+            <h1 class="text-base font-sans text-[#09080D]">16 people <span class="font-semibold">booked</span> a visit in last 24 hours</h1>
+        </div>
+        
+         </section>
+
+         <!-- banner right part -->
+         <section>
+          <img src="Home_imges/Imagemain.png" alt="" class="w-[460px] h-[693px] rounded-t-full ml-5">
+         </section>
+         <img src="Home_imges/plain 7.png" alt="" class="w-[230px] h-[230px] rounded-full border-4 border-[#FCFCFD] absolute right-[300px]">
+         <img src="Home_imges/tree.png" alt="" class="w-[141px] h-[141px] rounded-full border-4 border-[#FCFCFD] absolute right-[250px] bottom-[300px] ">
+         <img src="Home_imges/sea.png" alt="" class="w-[74px] h-[74px] rounded-full absolute right-[230px] bottom-[450px] border-4 border-[#FCFCFD]">
+
+
+
+        </section>
+    </header>
+
+    <!-- main -->
+    <main class="">
+      <!-- explore the part -->
+      <section class="w-screen h-[600px]  ">
+        <section class="mx-[120px] ">
+          <!-- header part of the section -->
+          <div class="flex flex-col justify-center items-center  mt-[120px]">
+            <h1 class=" font-semibold text-5xl w-[634px] h-[128px] text-center">Explore the site through a visual journey</h1>
+            <p class="text-[#09080D] mt-4 font-normal text-base w-[244px] h-[24px]">Find and book a great experience</p>
+          </div>
+          <!-- end the header part  -->
+          <!-- circle part -->
+          <div class="flex  w-[1120px] mt-10 justify-center mx-auto gap-x-8">
+            <div class="w-[352px] h-[152px]  px-9 py-4 ">
+              <div class="flex items-center">
+                <img src="Home_imges/Rectangle 7.png" alt="" class="w-[120px] h-[120px]  rounded-full ">
+                <div class="ml-4">
+                <h1 class="w-[136px] h-[52px] font-medium text-lg">Luxury resort at the sea </h1>
+                <div class="w-[106px] h-[36px] bg-[#E9EBED] px-3 py-2 rounded-3xl mt-4"><p class="w-[82px] h-[20px] text-sm font-medium">8,342 places</p></div>
+              </div>
+              </div>
+
+            </div>
+            <!-- second one  -->
+            <div class="w-[352px] h-[152px]  px-9 py-4  ">
+              <div class="flex items-center   ">
+                <img src="Home_imges/Rectangle 8.png" alt="" class="w-[120px] h-[120px]  rounded-full ">
+                <div class="ml-4">
+                <h1 class="w-[136px] h-[52px] font-medium text-lg">Luxury resort at the sea </h1>
+                <div class="w-[106px] h-[36px] bg-[#E9EBED] px-3 py-2 rounded-3xl mt-4"><p class="w-[82px] h-[20px] text-sm font-medium">8,342 places</p></div>
+              </div>
+              </div>
+
+            </div>
+            <!-- third one -->
+            <div class="w-[352px] h-[152px]  px-9 py-4  ">
+              <div class="flex items-center   ">
+                <img src="Home_imges/Rectangle 9.png" alt="" class="w-[120px] h-[120px]  rounded-full ">
+                <div class="ml-4">
+                <h1 class="w-[136px] h-[52px] font-medium text-lg">Luxury resort at the sea </h1>
+                <div class="w-[106px] h-[36px] bg-[#E9EBED] px-3 py-2 rounded-3xl mt-4"><p class="w-[82px] h-[20px] text-sm font-medium">8,342 places</p></div>
+              </div>
+              </div>
+
+            </div>
+
+          </div>
+        </section>
+        <!-- explore section -->
+
+
+      </section>
+      <!-- explore section -->
+
+      <section class="w-screen h-[1017px]">
+        <section class="mx-[120px]">
+          <div class="flex items-center justify-between ">
+            <h1 class="w-[431px] h-[128px] text-5xl font-semibold">Explore the world for relax!</h1>
+            <p class="w-[540px] h-[48px] text-[#7D7C84]">All-inclusive vacations and flights to the Caribbean, Indonesian, and more than 1,300 destinations worldwide. Now with Xplore Vacations.</p>
+          </div>
+          <!-- button part -->
+          <div class="flex justify-between  mt-[50px]">
+            <div class="btn-group">
+              <input type="radio" id="popular" name="category" class="hidden peer/popular" checked>
+              <label for="popular" class="btn btn-ghost bg-white text-black w-[158px] h-[44px] peer-checked/popular:bg-black peer-checked/popular:text-white peer-checked/popular:rounded-full">Popular nearby</label>
+            
+              <input type="radio" id="islands" name="category" class="hidden peer/islands">
+              <label for="islands" class="btn btn-ghost bg-white text-black w-[99px] h-[44px] peer-checked/islands:bg-black peer-checked/islands:text-white peer-checked/islands:rounded-full">Islands</label>
+            
+              <input type="radio" id="surfing" name="category" class="hidden peer/surfing">
+              <label for="surfing" class="btn btn-ghost bg-white text-black w-[99px] h-[44px] peer-checked/surfing:bg-black peer-checked/surfing:text-white peer-checked/surfing:rounded-full">Surfing</label>
+            
+              <input type="radio" id="parks" name="category" class="hidden peer/parks">
+              <label for="parks" class="btn btn-ghost bg-white text-black w-[139px] h-[44px] peer-checked/parks:bg-black peer-checked/parks:text-white peer-checked/parks:rounded-full">National parks</label>
+            
+              <input type="radio" id="lake" name="category" class="hidden peer/lake">
+              <label for="lake" class="btn btn-ghost bg-white text-black w-[158px] h-[44px] peer-checked/lake:bg-black peer-checked/lake:text-white peer-checked/lake:rounded-full">Lake</label>
+            
+              <input type="radio" id="beach" name="category" class="hidden peer/beach">
+              <label for="beach" class="btn btn-ghost bg-white text-black w-[158px] h-[44px] peer-checked/beach:bg-black peer-checked/beach:text-white peer-checked/beach:rounded-full">Beach</label>
+            
+              <input type="radio" id="camp" name="category" class="hidden peer/camp">
+              <label for="camp" class="btn btn-ghost bg-white text-black w-[158px] h-[44px] peer-checked/camp:bg-black peer-checked/camp:text-white peer-checked/camp:rounded-full">Camp</label>
+            </div>
+
+            <input type="radio" id="filter" name="category" class="hidden peer/filter">
+            <label for="filter" class="btn btn-ghost bg-white text-black w-[158px] h-[44px] peer-checked/filter:bg-black peer-checked/filter:text-white peer-checked/filter:rounded-full"> <img src="Home_imges/setting-4.png" alt="" class="w-[24px] h-[24px]">Filters</label>
+            
+          </div>
+
+          <!-- big image part  -->
+
+          <section class="flex  justify-evenly mt-12">
+            <!-- first card -->
+            <div class="w-[282px] h-[417px] ">
+              <img src="Home_imges/Rectangle 10.png" alt=""  class="rounded-xl">
+             <div class="mt-3">
+              <div class="flex justify-between">
+                <div class="">
+                  <h1 class="w-[125px] h-[28px] text-xl font-medium">Luxury resort</h1>
+                  <p class="text-[#7D7C84] mt-1 text-base w-[71px] h-[24px]">Indonesian</p>
+                </div>
+                <div class="flex items-center mr-5">
+                  <img src="Home_imges/star.png" alt="" class="w-[16px] h-[16px]">
+                  <p class="text-base font-medium w-[23px] h-[24px] ml-1">4.8</p>
+                </div>
+               </div>
+               <hr class="w-[270px] mt-4 mb-4">
+  
+               <div class="flex items-center justify-between ">
+                <h1 class="text-[#7D7C84] text-base w-[66px] h-[24px]">Jul 20-24</h1>
+                <p class="text-2xl font-medium mr-5">$140<span class="text-sm">/Night</span></p>
+               </div>
+             </div>
+
+            </div>
+            <!-- second cart -->
+            <div class="w-[282px] h-[417px]">
+              <img src="Home_imges/Rectangle 11.png" alt=""  class="rounded-xl">
+             <div class="mt-3">
+              <div class="flex justify-between">
+                <div class="">
+                  <h1 class="w-[175px] h-[28px] text-xl font-medium">Pasir putih resort </h1>
+                  <p class="text-[#7D7C84] mt-1 text-base w-[71px] h-[24px]">Indonesian</p>
+                </div>
+                <div class="flex items-center mr-5">
+                  <img src="Home_imges/star.png" alt="" class="w-[16px] h-[16px]">
+                  <p class="text-base font-medium w-[23px] h-[24px] ml-1">4.8</p>
+                </div>
+               </div>
+               <hr class="w-[270px] mt-4 mb-4">
+  
+               <div class="flex items-center justify-between ">
+                <h1 class="text-[#7D7C84] text-base w-[66px] h-[24px]">Jul 20-24</h1>
+                <p class="text-2xl font-medium mr-5">$140<span class="text-sm">/Night</span></p>
+               </div>
+             </div>
+
+            </div>
+            <!-- third cart --> <div class="w-[282px] h-[417px]">
+              <img src="Home_imges/Rectangle 12.png" alt=""  class="rounded-xl">
+              <div class="mt-3">
+               <div class="flex justify-between">
+                 <div class="">
+                   <h1 class="w-[185px] h-[28px] text-xl font-medium">Soanargan resort</h1>
+                   <p class="text-[#7D7C84] mt-1 text-base w-[71px] h-[24px]">Indonesian</p>
+                 </div>
+                 <div class="flex items-center mr-5">
+                   <img src="Home_imges/star.png" alt="" class="w-[16px] h-[16px]">
+                   <p class="text-base font-medium w-[23px] h-[24px] ml-1">4.8</p>
+                 </div>
+                </div>
+                <hr class="w-[270px] mt-4 mb-4">
+   
+                <div class="flex items-center justify-between ">
+                 <h1 class="text-[#7D7C84] text-base w-[66px] h-[24px]">Jul 20-24</h1>
+                 <p class="text-2xl font-medium mr-5">$140<span class="text-sm">/Night</span></p>
+                </div>
+              </div>
+ 
+             </div>
+             <!-- fourth cart -->
+             <div class="w-[282px] h-[417px]">
+              <img src="Home_imges/Rectangle 13.png" alt=""  class="rounded-xl">
+             <div class="mt-3">
+              <div class="flex justify-between">
+                <div class="">
+                  <h1 class="w-[125px] h-[28px] text-xl font-medium">Abiansemal</h1>
+                  <p class="text-[#7D7C84] mt-1 text-base w-[71px] h-[24px]">Indonesian</p>
+                </div>
+                <div class="flex items-center mr-5">
+                  <img src="Home_imges/star.png" alt="" class="w-[16px] h-[16px]">
+                  <p class="text-base font-medium w-[23px] h-[24px] ml-1">4.8</p>
+                </div>
+               </div>
+               <hr class="w-[270px] mt-4 mb-4">
+  
+               <div class="flex items-center justify-between ">
+                <h1 class="text-[#7D7C84] text-base w-[66px] h-[24px]">Jul 20-24</h1>
+                <p class="text-2xl font-medium mr-5">$140<span class="text-sm">/Night</span></p>
+               </div>
+             </div>
+           
+
+            </div>
+
+ 
+          </section>
+          
+         <div class="w-[121px] h-[56px]  px-8 py-4 justify-center mx-auto mt-8">
+          <a href=""><h1 class="text-base  w-[57px] h-[24px] ">view all</h1></a>
+         </div>
+
+        </section>
+      </section>
+      <!-- double image part -->
+      <section class="w-screen h-[823px]">
+        <section class="mx-[120px]">
+          <div class="flex items-center justify-evenly">
+            <!-- left part -->
+            <div class="flex  w-[530px]">
+              <img src="Home_imges/Rectangle 12.png" alt="" class="w-[460px] h-[583px] rounded-full">
+              <img src="Home_imges/Rectangle 16.png" alt="" class="w-[230px] h-[230px] rounded-full border-4  border-white absolute ml-[300px]">
+            </div>
+            <!-- right part -->
+            <div class=" w-[573px] h-[362px]">
+              <div class="flex items-center ">
+                <hr class="w-8 h-[2px] bg-[#58C17D]"> 
+                <h1 class="text-[#58C17D] font-sans font-medium">Travel is your friend</h1>
+              </div>
+              <h1 class="text-5xl font-bold mt-4 w-[573px] h-[128px]">All the best places to travel, curated by you.</h1>
+              <p class="w-[473px] h-[96px] text-[#7D7C84] mt-4 ">Get the most out of your travel experience. At Trav.id, we help you find the best travel deals through our simple and transparent travel booking service. Find cheap flights, last minute trips and hotels from a range of travel brands,</p>
+
+            <div class="flex gap-x-8 mt-10">
+              <div class="flex w-[146px] h-[40px]">
+                <img src="Home_imges/award.png" alt="" class="w-8 h-8 ">
+
+                <h1 class="text-[#09080D] text-2xl font-bold ml-2">15</h1>
+                <p class="w-[71px] h-[40px] text-[#7D7C84] text-sm ml-[12px]">Years of experience</p>
+              </div>
+
+              <div class="flex w-[146px] h-[40px] ">
+                <img src="Home_imges/happyemoji.png" alt="" class="w-8 h-8 ">
+                <h1 class="text-[#09080D] text-2xl font-bold ml-2">15</h1>
+                <p class="w-[71px] h-[40px] text-[#7D7C84] text-sm ml-[12px]">Years of experience</p>
+              </div>
+
+              <div class="flex w-[146px] h-[40px]">
+                <img src="Home_imges/close-circle.png" alt="" class="w-8 h-8 ">
+
+                <h1 class="text-[#09080D] text-2xl font-bold ml-2">15</h1>
+                <p class="w-[71px] h-[40px] text-[#7D7C84] text-sm ml-[12px]">Years of experience</p>
+              </div>
+            </div>
+
+            </div>
+
+          </div>
+
+        </section>
+      </section>
+
+
+    </main>
+
+
+    
+</body>
+</html>
